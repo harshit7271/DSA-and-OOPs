@@ -9,4 +9,4 @@ class Car:
         return f"{self.brand}, {self.model}"    
     
 my_car = Car("Toyota", "Corolla")
-print(my_car.full_details())
+print(my_car.full_details())     ## we will use paranthesis () to call method full_details
