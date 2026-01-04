@@ -12,5 +12,5 @@ for i in range(0, len(newArray)):
 # LETS REVERSE ALL THE ELEMENTS
 
 reversedArray = val[::-1]
-for i in range(len(reversedArray)):
+for i in range(0, len(reversedArray)):
     print(reversedArray[i], end=" ")
