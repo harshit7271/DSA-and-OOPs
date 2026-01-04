@@ -38,5 +38,8 @@ print('\n')
 
 # another way
 array2 = array(val.typecode, (x for x in val))
-for i in range(len(val)):
+for i in range(len(array2)):
     print(array2[i], end=" ")
+
+
+array2.pop(3)   # delete the number at 4th place = 150
