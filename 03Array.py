@@ -8,3 +8,13 @@ print('\n')
 
 for x in val:
     print(x, end=' , ')
+
+print("\n")
+
+print(val.typecode)
+
+print("\n")
+
+val.reverse()
+for i in range(0, len(val)):
+    print(val[i], end=" ")
