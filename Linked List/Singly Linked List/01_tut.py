@@ -25,6 +25,17 @@ class SinglyLinkedList:
         temp_node.next = self.head
         self.head = temp_node
 
+    # insertion in the middle
+    def insertInMid(self, value, x):
+        temp_node = Node(value)
+        t1 = self.head
+
+        while (t1.next != None):
+            if (t1.data == x):
+                temp_node.next = t1.next
+                t1.next = temp_node
+            t1 = t1.next  # when the t1 is first data itself
+
     def printLinkedList(self):
         t1 = self.head
         while t1 is not None:
@@ -38,4 +49,5 @@ obj.insertAtEnd(10)
 obj.insertAtEnd(20)
 obj.insertAtBegining(5)
 obj.insertAtEnd(30)
+obj.insertInMid(2, 20)
 obj.printLinkedList()
