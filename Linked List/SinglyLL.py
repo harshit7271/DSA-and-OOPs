@@ -36,6 +36,25 @@ class SinglyLinkedList:
                 t1.next = temp_node
             t1 = t1.next  # when the t1 is first data itself
 
+    # deletion
+    def deleteLL(self, value):
+        t1 = self.head
+        prev = t1
+
+        if (self.head == value):             # when the first element is what i want to delete
+            self.head = prev.next
+
+        while (t1.next != None):      # when its somewhere in the mid
+            if (t1.data == value):
+                prev.next = t1.next
+                break
+            else:
+                prev = t1
+                t1 = t1.next
+
+        if (t1.data == value):           # when its the last element i want to get rid off
+            prev.next = None
+
     def printLinkedList(self):
         t1 = self.head
         while t1 is not None:
@@ -50,4 +69,16 @@ obj.insertAtEnd(20)
 obj.insertAtBegining(5)
 obj.insertAtEnd(30)
 obj.insertInMid(2, 20)
+obj.deleteLL(30)
 obj.printLinkedList()
+
+
+"""
+
+Final Output:
+5
+10
+20
+2
+
+"""
