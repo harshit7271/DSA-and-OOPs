@@ -7,6 +7,7 @@ class stack:
 
     def push(self, value):
         self.s.insert(0, value)
+        print(f"Pushed : {value}")
 
     def peek(self):                              # to check what's there at the top of the stack
         if len(self.s) == 0:
