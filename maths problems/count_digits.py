@@ -2,6 +2,7 @@ def CountDigit(num):
     return len(str(num))
 
 
+# num = int(input())    if i want to get the input from the user itself
 num = 788756764353
 print(CountDigit(num))
 # output : 12
