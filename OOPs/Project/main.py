@@ -59,7 +59,7 @@ class chatbook:
         if self.login_status == True:
             post = input("Write your post here: ")
             print("\n")
-            print("Your post has been published")
+            print(f"Your post has been published successfully: {post}")
         else:
             print("\nYou are not signned in, please sign in first to write a post")
             print("\n")
