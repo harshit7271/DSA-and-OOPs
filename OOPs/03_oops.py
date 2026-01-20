@@ -9,7 +9,7 @@ class employee:
         print("Attributes has been initiated successfully")
 
     def travel(self, destination):
-        print("This travel function was called manually")
+        print("This travel method was called manually")
         print(f"The employee is traveling to {destination}")
 
 
