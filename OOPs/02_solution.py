@@ -3,10 +3,19 @@
 class Car:
     def __init__(self, brand, model):
         self.brand = brand
-        self.model = model 
-        
+        self.model = model
+
     def full_details(self):
-        return f"{self.brand}, {self.model}"    
-    
+        return f"{self.brand}, {self.model}"
+
+
 my_car = Car("Toyota", "Corolla")
-print(my_car.full_details())     ## we will use paranthesis () to call method full_details
+# we will use paranthesis () to call method full_details
+print(my_car.full_details())
+
+
+# Note : Advantages of OOPs
+# Code resuability
+# You craete your own data types
+# Debugging is easier
+# easy to colab
