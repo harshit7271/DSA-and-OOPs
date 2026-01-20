@@ -18,7 +18,7 @@ class chatbook:
         elif user_input == '2':
             self.signin()
         elif user_input == '3':
-            pass
+            self.write_post()
         elif user_input == '4':
             pass
         else:
@@ -54,6 +54,16 @@ class chatbook:
                 print("signin failed. Wrong credentials")
         print("\n")
         self.menu()
+
+    def write_post(self):
+        if self.login_status == True:
+            post = input("Write your post here: ")
+            print("\n")
+            print("Your post has been published")
+        else:
+            print("\nYou are not signned in, please sign in first to write a post")
+            print("\n")
+            self.menu()
 
 
 # creating an object instance of the class
