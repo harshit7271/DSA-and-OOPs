@@ -16,7 +16,7 @@ class chatbook:
         if user_input == '1':
             self.signup()
         elif user_input == '2':
-            pass
+            self.signin()
         elif user_input == '3':
             pass
         elif user_input == '4':
