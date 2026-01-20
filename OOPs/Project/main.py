@@ -20,7 +20,7 @@ class chatbook:
         elif user_input == '3':
             self.write_post()
         elif user_input == '4':
-            pass
+            self.message_friend()
         else:
             print("Thaanks for using ChatBook")
 
@@ -62,6 +62,19 @@ class chatbook:
             print(f"Your post has been published successfully: {post}")
         else:
             print("\nYou are not signned in, please sign in first to write a post")
+            print("\n")
+            self.menu()
+
+    def message_friend(self):
+        if self.login_status == True:
+            friend_name = input("Please enter your friend name here: ")
+            msg = input("\nEnter your message here:")
+            print(
+                f"\nYour message has been succesfully sent to {friend_name} : {msg}")
+            print("\n")
+        else:
+            print(
+                "you are not siggned in or signned up yet. Please sign in or sign up first to send any message")
             print("\n")
             self.menu()
 
