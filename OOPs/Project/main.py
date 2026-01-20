@@ -27,13 +27,29 @@ class chatbook:
     def signup(self):
         username = input("Enter your username: ")
         email = input("Enter your email: ")
-        password = input("Enter your passwortd: ")
+        password = input("Enter your password: ")
         self.username = username
         self.email = email
         self.password = password
         print("Signup successfull")
-        print("/n")
+        print("\n")
         print(f"Your username is {self.username} and email is {self.email}")
+        self.menu()
+
+    def signin(self):
+        if self.username == '' and self.email == '' and self.password == '':
+            print("You are not signned up yet. Please signup first")
+            self.menu()
+        else:
+            uname = input("Enter your username: ")
+            pwd = input("Enter your password: ")
+            email = input("Enter your email: ")
+            if uname == self.username and pwd == self.password and email == self.email:
+                print("Signin successfull")
+                self.login_status = True
+            else:
+                print("signin failed. Wrong credentials")
+        print("\n")
         self.menu()
 
 
