@@ -34,11 +34,13 @@ class chatbook:
         print("Signup successfull")
         print("\n")
         print(f"Your username is {self.username} and email is {self.email}")
+        print("\n")
         self.menu()
 
     def signin(self):
         if self.username == '' and self.email == '' and self.password == '':
             print("You are not signned up yet. Please signup first")
+            print("\n")
             self.menu()
         else:
             uname = input("Enter your username: ")
