@@ -1,6 +1,7 @@
 class chatbook:
     def __init__(self):
         self.username = ''
+        self.email = ''
         self.password = ''
         self.login_status = False
         self.menu()
@@ -22,6 +23,15 @@ class chatbook:
             pass
         else:
             print("Thaanks for using ChatBook")
+
+    def signup(self):
+        username = input("Enter your username: ")
+        email = input("Enter your email: ")
+        password = input("Enter your passwortd: ")
+        self.username = username
+        self.email = email
+        self.password = password
+        print("Signup successfull")
 
 
 # creating an object instance of the class
