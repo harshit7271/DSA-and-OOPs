@@ -12,3 +12,17 @@ class chatbook:
                            3. Press 3 to write a post
                            4. Press 4 to message a friend
                            5. Press any other key to exit""")
+        if user_input == '1':
+            pass
+        elif user_input == '2':
+            pass
+        elif user_input == '3':
+            pass
+        elif user_input == '4':
+            pass
+        else:
+            print("Thaanks for using ChatBook")
+
+
+# creating an object instance of the class
+app = chatbook()
