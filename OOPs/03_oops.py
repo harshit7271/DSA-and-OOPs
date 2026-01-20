@@ -1,6 +1,6 @@
 # Initiate class
 class employee:
-    # special method/magic method/dunder method - constructor
+    # special method/magic method/dunder method - constructor (constructor get called automatically as we assign value to the object)
     def __init__(self):
         self.id = 102
         self.designation = "ML Engineer"
