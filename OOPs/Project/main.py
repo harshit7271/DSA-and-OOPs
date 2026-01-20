@@ -33,7 +33,8 @@ class chatbook:
         self.password = password
         print("Signup successfull")
         print("\n")
-        print(f"Your username is {self.username} and email is {self.email}")
+        print(
+            f"Your username is {self.username}, password is {self.password} and mail is {self.email}")
         print("\n")
         self.menu()
 
