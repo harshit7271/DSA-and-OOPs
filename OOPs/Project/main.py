@@ -13,7 +13,7 @@ class chatbook:
 
     # getter and setter methhods for the private attribute __name and __user_id
 
-    @staticmethod
+    @staticmethod   # we don't need self parameter here because we are accessing class variable
     def get_id():
         return chatbook.__user_id
 
