@@ -14,7 +14,7 @@ my_car = Car("Toyota", "Corolla")
 print(my_car.full_details())
 
 
-# Note : Advantages of OOPs
+# ----------------- Note : Advantages of OOPs-------------------
 # Code resuability
 # You craete your own data types
 # Debugging is easier
