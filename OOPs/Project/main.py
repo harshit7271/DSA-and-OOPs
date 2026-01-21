@@ -13,10 +13,12 @@ class chatbook:
 
     # getter and setter methhods for the private attribute __name and __user_id
 
-    def get_id(self):
+    @staticmethod
+    def get_id():
         return chatbook.__user_id
 
-    def set_id(self, val):
+    @staticmethod
+    def set_id(val):
         chatbook.__user_id = val
         return chatbook.__user_id
 
