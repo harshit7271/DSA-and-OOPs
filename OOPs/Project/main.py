@@ -11,7 +11,15 @@ class chatbook:
         self.login_status = False
         # self.menu()
 
-    # getter and setter methhods for the private attribute __name
+    # getter and setter methhods for the private attribute __name and __user_id
+
+    def get_id(self):
+        return chatbook.__user_id
+
+    def set_id(self, val):
+        chatbook.__user_id = val
+        return chatbook.__user_id
+
     def get_name(self):
         return self.__name
 
