@@ -18,3 +18,6 @@ print(user1.id)
 chatbook.set_id(15)
 user2 = chatbook()
 print(user2.id)
+
+user3 = chatbook()
+print(user3.id)
