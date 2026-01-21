@@ -7,6 +7,13 @@ class chatbook:
         self.login_status = False
         # self.menu()
 
+    # getter and setter methhods for the private attribute __name
+    def get_name(self):
+        return self.__name
+
+    def set_name(self, new_name):
+        self.__name = new_name
+
     def menu(self):
         user_input = input(""""Welcome to Chatbook
                            1. Press 1 to signup
