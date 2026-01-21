@@ -11,7 +11,7 @@ user2 = chatbook()
 print(user2.id)
 """
 
-# ------------encapsulation using getter and setter methods----------------
+# ------------using static method directly from class rather than object----------------
 user1 = chatbook()
 print(user1.id)
 
