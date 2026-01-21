@@ -19,3 +19,5 @@ print(my_car.full_details())
 # You craete your own data types
 # Debugging is easier
 # easy to colab
+# self is nothing but the current object of the class that we will be replacing while creating the object instance of the class.
+# It helps to access the attributes and methods of the class in python.
