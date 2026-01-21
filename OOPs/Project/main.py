@@ -1,5 +1,9 @@
 class chatbook:
+    __user_id = 0   # encapsuted class variable
+
     def __init__(self):
+        self.id = chatbook.__user_id    # setter = id
+        chatbook.__user_id += 1
         self.__name = "Default User"     # private attribute aka encapsulated attribute
         self.username = ''
         self.email = ''

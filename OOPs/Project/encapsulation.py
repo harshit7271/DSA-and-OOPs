@@ -5,3 +5,7 @@ user1 = chatbook()
 
 # accessing the private attribute using name mangling
 print(user1._chatbook__name)
+print(user1.id)
+
+user2 = chatbook()
+print(user2.id)
