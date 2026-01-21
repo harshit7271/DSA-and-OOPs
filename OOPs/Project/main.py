@@ -1,10 +1,11 @@
 class chatbook:
     def __init__(self):
+        self.__name = "Default User"     # private attribute aka encapsulated attribute
         self.username = ''
         self.email = ''
         self.password = ''
         self.login_status = False
-        self.menu()
+        # self.menu()
 
     def menu(self):
         user_input = input(""""Welcome to Chatbook
@@ -81,4 +82,4 @@ class chatbook:
 
 
 # creating an object instance of the class
-app = chatbook()
+obj = chatbook()
